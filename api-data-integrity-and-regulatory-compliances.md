@@ -4,26 +4,26 @@ To secure APIs, organizations must implement a layered defense that combines tec
 
 These protocols form the technical foundation for secure API communication and identity verification: [4, 5] 
 
-* OAuth 2.0 & OpenID Connect (OIDC): The industry standard for token-based authentication and authorization. OAuth 2.0 allows applications to access data without exposing user credentials, while OIDC adds an identity layer to verify who the user is.
-* TLS (Transport Layer Security): Essential for encrypting data in transit. Using HTTPS (HTTP over TLS) protects against interception and ensures that data remains confidential and unaltered during transmission.
-* JSON Web Tokens (JWT): Compact, URL-safe tokens used to securely transmit information. They often include digital signatures to verify that the payload hasn't been tampered with.
-* HMAC (Hash-Based Message Authentication Code): Combines a cryptographic hash with a secret key to verify both the authenticity and integrity of a message, ensuring it was not modified during transit. [6, 7, 8, 9, 10, 11, 12, 13] 
+* **OAuth 2.0 & OpenID Connect (OIDC)**: The industry standard for token-based authentication and authorization. OAuth 2.0 allows applications to access data without exposing user credentials, while OIDC adds an identity layer to verify who the user is.
+* **TLS (Transport Layer Security)**: Essential for encrypting data in transit. Using HTTPS (HTTP over TLS) protects against interception and ensures that data remains confidential and unaltered during transmission.
+* **JSON Web Tokens (JWT)**: Compact, URL-safe tokens used to securely transmit information. They often include digital signatures to verify that the payload hasn't been tampered with.
+* **HMAC (Hash-Based Message Authentication Code)**: Combines a cryptographic hash with a secret key to verify both the authenticity and integrity of a message, ensuring it was not modified during transit. [6, 7, 8, 9, 10, 11, 12, 13] 
 
 ## Safeguarding Data Integrity [14] 
 Maintaining the accuracy and consistency of data throughout its lifecycle requires proactive defensive measures: [15, 16, 17] 
 
-* Input Validation & Sanitization: All incoming data must be scrutinized against strict criteria (type, length, range) to prevent injection attacks like SQL injection or Cross-Site Scripting (XSS).
-* Least Privilege & RBAC: Implement Role-Based Access Control (RBAC) to ensure users only have the minimum permissions necessary for their specific tasks, reducing the risk of unauthorized data modification.
-* Schema Enforcement: Using libraries (e.g., Joi or Zod) to enforce request structures ensures that only valid, expected data enters the system.
-* Rate Limiting & Throttling: Controls the frequency of requests to prevent resource exhaustion and protect against Denial of Service (DoS) attacks that could disrupt data availability. [9, 13, 18, 19, 20, 21, 22] 
+* **Input Validation & Sanitization**: All incoming data must be scrutinized against strict criteria (type, length, range) to prevent injection attacks like SQL injection or Cross-Site Scripting (XSS).
+* **Least Privilege & RBAC**: Implement Role-Based Access Control (RBAC) to ensure users only have the minimum permissions necessary for their specific tasks, reducing the risk of unauthorized data modification.
+* **Schema Enforcement**: Using libraries (e.g., Joi or Zod) to enforce request structures ensures that only valid, expected data enters the system.
+* **Rate Limiting & Throttling**: Controls the frequency of requests to prevent resource exhaustion and protect against Denial of Service (DoS) attacks that could disrupt data availability. [9, 13, 18, 19, 20, 21, 22] 
 
 ## Ensuring Regulatory Compliance [14] 
 API security is a legal requirement in many sectors, where non-compliance can lead to massive fines and reputational damage. [20, 23, 24] 
 
-* GDPR (EU): Focuses on protecting personal data. It requires "Privacy by Design," meaning APIs must minimize data collection and ensure only necessary personal data is processed.
-* HIPAA (USA): Mandates strict safeguards for health information (PHI). APIs must implement detailed logging and audit trails to track every access to sensitive patient records.
-* PCI DSS: Applies to financial data. It explicitly requires encryption of cardholder data both at rest and in transit, along with regular vulnerability scanning.
-* Logging & Monitoring: Continuous auditing of API interaction logs is required by most frameworks to detect anomalies and provide evidence during regulatory audits. [1, 3, 14, 20, 23, 24] 
+* **GDPR (EU)**: Focuses on protecting personal data. It requires "Privacy by Design," meaning APIs must minimize data collection and ensure only necessary personal data is processed.
+* **HIPAA (USA)**: Mandates strict safeguards for health information (PHI). APIs must implement detailed logging and audit trails to track every access to sensitive patient records.
+* **PCI DSS**: Applies to financial data. It explicitly requires encryption of cardholder data both at rest and in transit, along with regular vulnerability scanning.
+* **Logging & Monitoring**: Continuous auditing of API interaction logs is required by most frameworks to detect anomalies and provide evidence during regulatory audits. [1, 3, 14, 20, 23, 24] 
 
 
 [1] [https://www.linkedin.com](https://www.linkedin.com/pulse/api-security-ensuring-compliance-data-privacy-how-solving-goyal-tlpuc)
